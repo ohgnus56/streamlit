@@ -15,7 +15,7 @@ with st.sidebar:
     <iframe src="https://ads-partners.coupang.com/widgets.html?id=757657&template=carousel&trackingCode=AF1960684&subId=&width=200&height=300&tsource=" width="200" height="300" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
     """
     st.markdown(iframe_html, unsafe_allow_html=True)
-    st.text("이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.")
+    st.info("이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.")
 
     st.title(f":blue[{test_text}]")
     openai_api_key = st.text_input("OpenAI API KEY", type="password")
