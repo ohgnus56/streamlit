@@ -2,7 +2,7 @@ from openai import OpenAI
 import streamlit as st
 import time
 
-assistant_id = 'asst_NxT4cLM8DewEp90LjrdZ3Y1T'
+assistant_id = st.secrets["assistant_id"]
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API KEY", type="password")
