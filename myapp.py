@@ -8,7 +8,7 @@ thread_id = st.secrets["thread_id"]
 test_text = st.secrets["test_text"]
 
 with st.sidebar:
-    st.link_button(":six_pointed_star:후원하기", "https://toss.me/kimfl")
+    st.link_button(":six_pointed_star: 더 좋은 컨텐츠를 위해 후원하기", "https://toss.me/kimfl")
 
     st.title(f":blue[{test_text}]")
     openai_api_key = st.text_input("OpenAI API KEY", type="password")
