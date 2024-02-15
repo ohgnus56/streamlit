@@ -12,7 +12,7 @@ with st.sidebar:
     """
     <iframe src="https://ads-partners.coupang.com/widgets.html?id=757657&template=carousel&trackingCode=AF1960684&subId=&width=300&height=300&tsource=" width="300" height="300" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
     """,
-    height=600,
+    # height=600,
 )
     st.title(f":blue[{test_text}]")
     openai_api_key = st.text_input("OpenAI API KEY", type="password")
