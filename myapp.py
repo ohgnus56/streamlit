@@ -7,7 +7,7 @@ thread_id = st.secrets["thread_id"]
 test_text = st.secrets["test_text"]
 
 with st.sidebar:
-    st.title(test_text)
+    st.title(f":blue[{test_text}]")
     openai_api_key = st.text_input("OpenAI API KEY", type="password")
 
     client = OpenAI(api_key=openai_api_key)
