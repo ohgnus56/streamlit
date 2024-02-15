@@ -12,10 +12,7 @@ with st.sidebar:
 
     # iframe을 사용하여 웹 콘텐츠 임베드
     iframe_html = f"""
-    <script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-	new PartnersCoupang.G({"id":757657,"template":"carousel","trackingCode":"AF1960684","width":"200","height":"300","tsource":""});
-</script>
+    <iframe src="https://ads-partners.coupang.com/widgets.html?id=757657&template=carousel&trackingCode=AF1960684&subId=&width=200&height=300&tsource=" width="200" height="300" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
     """
     st.markdown(iframe_html, unsafe_allow_html=True)
     st.text("이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.")
