@@ -10,6 +10,12 @@ test_text = st.secrets["test_text"]
 with st.sidebar:
     st.link_button(":six_pointed_star: 더 좋은 컨텐츠를 위해 후원하기", "https://toss.me/kimfl")
 
+    # iframe을 사용하여 웹 콘텐츠 임베드
+    iframe_html = f"""
+    <iframe src="https://ads-partners.coupang.com/widgets.html?id=757657&template=carousel&trackingCode=AF1960684&subId=&width=300&height=300&tsource=" width="300" height="300" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
+    """
+    st.markdown(iframe_html, unsafe_allow_html=True)
+
     st.title(f":blue[{test_text}]")
     openai_api_key = st.text_input("OpenAI API KEY", type="password")
 
